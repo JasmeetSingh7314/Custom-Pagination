@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Recent Reports Dialog Box
+## Overview
+- This project is focused on designing a dialog box that displays a list of recently generated reports within the last 30 days. The project is built using Next.js, TypeScript, and Tailwind CSS. Dummy data is used to populate the list, and a custom paginator is implemented 
+  without using any npm package or module.
 
-## Getting Started
+## Features
+ - Display a list of recently generated reports within the last 30 days.
+ - Use dummy data to populate the list for demonstration purposes.
+ - Implement a custom paginator without using any npm package or module.
+ - Built-in Next.js for server-side rendering and routing.
+ - Utilizes TypeScript for type safety.
+ - Styling with Tailwind CSS for rapid UI development.
+## Technologies Used
+- Next.js
+- TypeScript
+- Tailwind CSS
+## Custom Paginator Implementation
+- The custom paginator is implemented within the Pagination.tsx component. It allows users to navigate through report pages by providing previous and next buttons. The logic to calculate the number of pages and handle page navigation is handled internally within the component.
+## Filter
+To filter the reports within the last 30 days, the following steps are taken:
 
-First, run the development server:
+- Get the current date.
+- Subtract 30 days from the current date to get the date 30 days ago.
+- Compare the date of each report with the date 30 days ago.
+- Include only those reports whose date is greater than or equal to the date 30 days ago.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Installation
+ - Clone the repository
+ - Install dependencies: npm install
+## Usage
+- Start the development server: npm run dev
+- Open your browser and navigate to http://localhost:3000
+- The dialog box should automatically display the list of recently generated reports.

@@ -3,7 +3,6 @@ import { filter } from "@/utils/filter";
 import { CiFilter } from "react-icons/ci";
 import { RxCross1 } from "react-icons/rx";
 
-
 interface HeaderProps {
   setFilter: (item: any) => void;
 }
@@ -17,10 +16,13 @@ export default function Header({ setFilter }: HeaderProps) {
   return (
     <section className="flex justify-between items-center p-3 px-4 pt-4">
       <div></div>
-      <span className="flex justify-center text-2xl  tracking-wider font-bold  ">
+      <span className="flex  grow  pl-2 2xl:pl-40 2xl:grow-0 text-center text-2xl ml-32 tracking-wider font-bold  ">
         Recently Generated Reports
       </span>
-      <span className="flex gap-x-3 ">
+      <span className="flex items-center gap-x-3 ">
+        <span className="text-md hidden text-gray-400 font-bold md:flex ">
+          Apply Filter
+        </span>
         <button
           className=" p-3 font-extrabold  bg-transparent rounded-md border border-gray-500 text-black    hover:bg-gray-300 transition-all ease-in hover:shadow-2xl"
           onClick={() => handleFilter()}
@@ -33,6 +35,9 @@ export default function Header({ setFilter }: HeaderProps) {
         >
           <RxCross1 className="text-2xl font-bold" />
         </button>
+        <span className="text-md hidden text-gray-400 font-bold md:flex ">
+          Revert Filters
+        </span>
       </span>
     </section>
   );

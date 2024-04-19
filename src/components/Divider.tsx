@@ -9,7 +9,6 @@ export default function Divider() {
           Report Name
         </span>
       </div>
-
       <span className="text-xl   tracking-tight font-bold text-gray-700  ">
         Download
       </span>

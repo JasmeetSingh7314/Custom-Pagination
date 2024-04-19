@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
 
+//Type Defintion for Pagination Component Props
 type paginationType = {
   postsPerPage: number;
   setPostsPerPage: (postsPerPage: number) => void;
@@ -25,7 +26,7 @@ export default function Pagination({
     if (selected < totalPosts && selected > 0) {
       setSelected((prev) => prev + 1);
       paginate(selected + 1);
-      console.log(selected + 1);
+      
     }
   };
 
@@ -35,7 +36,7 @@ export default function Pagination({
     if (selected <= totalPosts && selected >= 2) {
       setSelected((prev) => prev - 1);
       paginate(selected - 1);
-      console.log(selected - 1);
+      
     }
   };
 
@@ -46,7 +47,7 @@ export default function Pagination({
     // Setting the selected state back to default
     setSelected(1);
     paginate(1);
-    console.log(postsPerPage);
+   
   };
 
   return (
@@ -62,6 +63,7 @@ export default function Pagination({
           <FaLongArrowAltLeft className="text-2xl" />
           Prev
         </button>
+        {/* To instantiate an array for the total number of posts  */}
         {[...Array(totalPosts)].map((_, id) => (
           <button
             key={id}
@@ -92,6 +94,7 @@ export default function Pagination({
           className="border border-gray-500/25 p-1 focus:border-gray-500"
           onChange={handleChange}
         >
+          {/* To instantiate an array for the 6 choices */}
           {[...Array(6)].map((_, index) => (
             <option key={index} value={(index + 1) * 5}>
               {(index + 1) * 5}{" "}

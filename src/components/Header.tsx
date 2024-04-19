@@ -2,7 +2,7 @@ import { dummyData } from "@/utils/dummyData";
 import { filter } from "@/utils/filter";
 import { CiFilter } from "react-icons/ci";
 import { RxCross1 } from "react-icons/rx";
-import { ObjectType } from "./Reports";
+
 
 interface HeaderProps {
   setFilter: (item: any) => void;

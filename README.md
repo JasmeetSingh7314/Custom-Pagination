@@ -1,4 +1,4 @@
-# Recent Reports Dialog Box
+# Custom Pagination and Filters
 ## Overview
 - This project is focused on designing a dialog box that displays a list of recently generated reports within the last 30 days. The project is built using Next.js, TypeScript, and Tailwind CSS. Dummy data is used to populate the list, and a custom paginator is implemented 
   without using any npm package or module.

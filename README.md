@@ -27,9 +27,14 @@ To filter the reports within the last 30 days, the following steps are taken:
 - Include only those reports whose date is greater than or equal to the date 30 days ago.
 
 ## Installation
- - Clone the repository
- - Install dependencies: npm install
+```
+ - clone 
+ - npm install
+
+```
 ## Usage
-- Start the development server: npm run dev
-- Open your browser and navigate to http://localhost:3000
-- The dialog box should automatically display the list of recently generated reports.
+```
+-  npm run dev
+-  navigate to http://localhost:3000
+
+```

@@ -15,12 +15,12 @@ export default function Header({ setFilter }: HeaderProps) {
   };
   return (
     <section className="flex justify-between items-center p-3 px-4 pt-4">
-      <div></div>
-      <span className="flex  grow  pl-2 2xl:pl-40 2xl:grow-0 text-center text-2xl ml-32 tracking-wider font-bold  ">
+      <div className=" hidden md:flex"></div>
+      <span className="flex  grow  pl-2 2xl:pl-40 2xl:grow-0 text-left lg:text-center text-2xl ml-32 tracking-wider font-bold  ">
         Recently Generated Reports
       </span>
       <span className="flex items-center gap-x-3 ">
-        <span className="text-md hidden text-gray-400 font-bold md:flex ">
+        <span className="text-md hidden text-gray-400 font-bold lg:flex ">
           Apply Filter
         </span>
         <button
@@ -35,7 +35,7 @@ export default function Header({ setFilter }: HeaderProps) {
         >
           <RxCross1 className="text-2xl font-bold" />
         </button>
-        <span className="text-md hidden text-gray-400 font-bold md:flex ">
+        <span className="text-md hidden text-gray-400 font-bold lg:flex ">
           Revert Filters
         </span>
       </span>

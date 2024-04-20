@@ -53,7 +53,7 @@ export default function Pagination({
   return (
     <section className="flex justify-around items-center p-8">
       <div className=" justify-center p-3  text-2xl hidden md:flex">
-        Pagination
+        
       </div>
       <div className="flex gap-x-2 items-center">
         <button
